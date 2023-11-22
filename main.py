@@ -74,7 +74,7 @@ class combo():
     def check(self):
         try:
             req=requests.get(self.url)
-            if req.status_code==200:
+            if req.status_code!=404:
                 return True
             else:
                 return False
